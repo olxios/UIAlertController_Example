@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIQ-L8-Vgg">
+                                <rect key="frame" x="215.5" y="50" width="169" height="30"/>
+                                <state key="normal" title="Normal UIAlertController"/>
+                                <connections>
+                                    <action selector="testAlert1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjF-p1-gTR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzk-eR-oIt">
+                                <rect key="frame" x="253" y="90" width="94" height="30"/>
+                                <state key="normal" title="Many buttons"/>
+                                <connections>
+                                    <action selector="testAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35e-8S-01x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-3g-keh">
+                                <rect key="frame" x="221.5" y="130" width="157" height="30"/>
+                                <state key="normal" title="Multiple cancel actions"/>
+                                <connections>
+                                    <action selector="testMultipleCancels:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZx-Im-e3b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMq-Rn-yaX">
+                                <rect key="frame" x="269" y="170" width="62" height="30"/>
+                                <state key="normal" title="TextField"/>
+                                <connections>
+                                    <action selector="testTextField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zkp-vg-GyD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tzk-eR-oIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Uk-Kf-mJS"/>
+                            <constraint firstItem="gIQ-L8-Vgg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Hu-8N-Vqc"/>
+                            <constraint firstItem="gMq-Rn-yaX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AoE-sy-k0v"/>
+                            <constraint firstItem="Tzk-eR-oIt" firstAttribute="top" secondItem="gIQ-L8-Vgg" secondAttribute="bottom" constant="10" id="PL0-mK-77u"/>
+                            <constraint firstItem="gMq-Rn-yaX" firstAttribute="top" secondItem="qcd-3g-keh" secondAttribute="bottom" constant="10" id="Vwu-I6-Yxh"/>
+                            <constraint firstItem="qcd-3g-keh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jNs-ie-BgM"/>
+                            <constraint firstItem="gIQ-L8-Vgg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="siR-om-nhk"/>
+                            <constraint firstItem="qcd-3g-keh" firstAttribute="top" secondItem="Tzk-eR-oIt" secondAttribute="bottom" constant="10" id="stJ-Xy-DtR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

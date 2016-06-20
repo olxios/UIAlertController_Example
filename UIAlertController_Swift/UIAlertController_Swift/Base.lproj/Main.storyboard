@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cCU-dd-zMV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vc4-cM-iey">
+            <objects>
+                <viewController id="cCU-dd-zMV" customClass="ViewController" customModule="UIAlertController_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qJh-i1-S8f"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHb-kz-bot"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="juE-T8-fDc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX0-6w-hYE">
+                                <rect key="frame" x="253" y="90" width="94" height="30"/>
+                                <state key="normal" title="Many buttons"/>
+                                <connections>
+                                    <action selector="testAlert2" destination="cCU-dd-zMV" eventType="touchUpInside" id="ZTh-Tf-po3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wg5-um-ajY">
+                                <rect key="frame" x="221.5" y="130" width="157" height="30"/>
+                                <state key="normal" title="Multiple cancel actions"/>
+                                <connections>
+                                    <action selector="testMultipleCancels" destination="cCU-dd-zMV" eventType="touchUpInside" id="MGj-vA-oQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5p3-Pf-Szm">
+                                <rect key="frame" x="269" y="170" width="62" height="30"/>
+                                <state key="normal" title="TextField"/>
+                                <connections>
+                                    <action selector="testTextField" destination="cCU-dd-zMV" eventType="touchUpInside" id="Zo4-1Y-O2a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzD-q8-W1p">
+                                <rect key="frame" x="216" y="50" width="169" height="30"/>
+                                <state key="normal" title="Normal UIAlertController"/>
+                                <connections>
+                                    <action selector="testAlert1" destination="cCU-dd-zMV" eventType="touchUpInside" id="AcT-gc-crz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tX0-6w-hYE" firstAttribute="centerX" secondItem="juE-T8-fDc" secondAttribute="centerX" id="1Lb-gJ-fJb"/>
+                            <constraint firstItem="tX0-6w-hYE" firstAttribute="top" secondItem="IzD-q8-W1p" secondAttribute="bottom" constant="10" id="89h-GR-uoQ"/>
+                            <constraint firstItem="IzD-q8-W1p" firstAttribute="top" secondItem="qJh-i1-S8f" secondAttribute="bottom" constant="30" id="9XH-sf-Ogw"/>
+                            <constraint firstItem="5p3-Pf-Szm" firstAttribute="centerX" secondItem="juE-T8-fDc" secondAttribute="centerX" id="LUV-ag-pPG"/>
+                            <constraint firstItem="wg5-um-ajY" firstAttribute="top" secondItem="tX0-6w-hYE" secondAttribute="bottom" constant="10" id="Qxp-9k-f06"/>
+                            <constraint firstItem="wg5-um-ajY" firstAttribute="centerX" secondItem="juE-T8-fDc" secondAttribute="centerX" id="Tvi-YA-PP9"/>
+                            <constraint firstItem="5p3-Pf-Szm" firstAttribute="top" secondItem="wg5-um-ajY" secondAttribute="bottom" constant="10" id="VVE-GA-jOf"/>
+                            <constraint firstItem="IzD-q8-W1p" firstAttribute="centerX" secondItem="juE-T8-fDc" secondAttribute="centerX" id="hda-Dz-kuT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iL7-PY-ZbK" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
